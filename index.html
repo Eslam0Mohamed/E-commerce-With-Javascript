@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            Shop Now
+        </div>
+        <ul>
+            <li><a href="index.html">Products</a></li>
+            <li><a href="admin.html">Admin</a></li>
+            <li><a href="create.html">Create</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <aside>
+            <h3>Filter Products</h3>
+            <div class="filter">
+                <label for="category">Category</label>
+                <select name="" id="category">
+                    <option value="">Select Category</option>
+                    <option value="1">Clothes</option>
+                    <option value="2">Electronics</option>
+                    <option value="3">Furniture</option>
+                    <option value="4">Shoes</option>
+                    <option value="5">Miscellaneous</option>
+                    <option value="56">Testing Category</option>
+                    <option value="58">Phones</option>
+                    <option value="59">Computers</option>
+                    <option value="60">SmartWatch</option>
+                    <option value="61">Camera</option>
+                    <option value="62">HeadPhones</option>
+                    <option value="63">Gaming</option>
+                    <option value="64">Cqt</option>
+                    <option value="65">sss</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label for="">Min Price</label>
+                <input type="number" name="" id="min-price">
+            </div>
+            <div class="filter">
+                <label for="">Max Price</label>
+                <input type="number" name="" id="max-price">
+            </div>
+            <button class="apply">Apply Filters</button>
+            <button class="reset">Reset</button>
+        </aside>
+        <main>
+            <div class="products">
+
+            </div>
+            <div class="pagination">
+                <button class="btn previous">Previous</button>
+                <button class="btn next">Next</button>
+            </div>
+        </main>
+
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p id="modal-message">Your message goes here</p>
+            <button id="close-modal">Close</button>
+        </div>
+    </div>
+<div class="loader-container">
+    <span class="loader"></span>
+</div>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <header>
+        <div class="logo">
+            Shop Now
+        </div>
+        <ul>
+            <li><a href="index.html">Products</a></li>
+            <li><a href="admin.html">Admin</a></li>
+            <li><a href="create.html">Create</a></li>
+        </ul>
+    </header>
+    <div class="search">
+        <input type="text" placeholder="You Can search Here " class="search-input">
+        <div class="search-icon">
+            <img src="image.png" alt="" style="width: 30px;">
+        </div>
+    </div>
+<table class="table">
+    <thead>
+
+        <tr class="bg-blue">
+            <th>
+                PRODUCT ID
+            </th>
+            <th>
+                PRODUCT NAME
+            </th>
+            <th>
+                PRODUCT CATEGORY
+            </th>
+            <th>
+                PRODUCT PRICE
+            </th>
+            <th>
+                CATEGORY ID
+            </th>
+            <th>
+                ACTIONS
+            </th>
+        </tr>
+        
+    </thead>
+    <tbody class="table-body"></tbody>
+
+</table>
+     <div class="pagination">
+        <button class="btn previous">Previous</button>
+        <button class="btn next">Next</button>
+     </div>
+    
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <p id="modal-message">Your message goes here</p>
+    <button id="close-modal">Close</button>
+  </div>
+</div>
+<div class="loader-container">
+    <span class="loader"></span>
+</div>
+    <script src="js/admin.js"></script>
+</body>
+</html>
