@@ -54,7 +54,7 @@ let productsCards = products.map((product)=>{
 return `
 <a href="productdetails.html?id=${product.id}" style="color:#000;text-decoration:none">
 <div class="card">
-<img src="./www.jpg" alt="">
+<img src="https://www.pexels.com/photo/macbook-pro-beside-white-ipad-4158/" alt="">
 <h2 class="title">${product.title}</h2>
 <h3 class="category">${product.category.name}</h3>
 <p class="desc">${product.description}</p>
