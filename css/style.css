@@ -15,7 +15,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 15px;
+    padding: 20px 25px;
     background-color: #017bff;
     color: #fff;
     z-index: 10;
@@ -114,13 +114,14 @@ main .products{
   justify-content: space-between;
 }
 .card img{
-    width: 200px;
-
+    width:100%;
+    border-radius: 8px;
 }
 .title{
 color: #017bff;
 font-weight: 800;
-min-height: 70px;
+min-height: 60px;
+font-size: 22px;
 }
 .category{
 background-color: #000;
@@ -128,7 +129,10 @@ color: #fff;
 font-weight: bold;
 padding: 4px;
 border-radius: 10px;
-margin-top: 10px;
+margin-top:5px;
+width: fit-content;
+padding: 5px 15px;
+font-size: 15px;
 }
 .desc{
   overflow: hidden;
@@ -141,15 +145,17 @@ margin-top: 10px;
 .price{
 color: rgb(77, 167, 137);
 font-size: 20px;
-margin: 10px 0;
+/* margin: px 0; */
 }
 .product-container img{
     width: 300px;
+    height: 300px;
 }
 .product-container{
 background-color: #eee;
-width: 50%;
+width: 70%;
 margin: 20px auto;
+/* padding:20px 15px; */
 
 }
 
@@ -158,7 +164,8 @@ background-color: #fff;
 border-radius: 8px;
 display: flex;
 gap: 20px;
-padding: 20px 15px; 
+padding: 30px 15px; 
+/* flex-wrap:wrap; */
 }
 .flex{
     display: flex;
@@ -190,7 +197,7 @@ padding: 20px 15px;
     background-color: red;
 }
 table{
-    width: 80%;
+    width: 90%;
     margin: auto;
     margin-top: 20px;
     border: 3px solid #ddd;
@@ -266,8 +273,23 @@ border-radius: 10px;
     right: 15px;
     cursor:pointer;
 }
+.error{
+    margin-inline: auto;
+    width: 70%;
+    padding: 0px 10px ;
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    display: none;
+}
+.edit-form-error{
+        font-size: 14px;
+    font-weight: bold;
+    display: none;
+    color: red;
+}
 
-.modal {
+.del-modal, .modal {
   display: none; 
   position: fixed;
   top: 0;
@@ -280,7 +302,7 @@ border-radius: 10px;
   z-index: 1000;
 }
 
-.modal-content {
+ .del-modal-content, .modal-content {
   background: #fff;
   padding: 20px 30px;
   border-radius: 12px;
@@ -290,7 +312,7 @@ border-radius: 10px;
   animation: fadeIn 0.3s ease;
 }
 
-#close-modal {
+ .del-yes-modal,.del-no-modal,#close-modal {
   margin-top: 10px;
   padding: 6px 14px;
   background-color: #007bff;
@@ -308,6 +330,9 @@ border-radius: 10px;
   from { transform: scale(0.9); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
 }
+body{
+    /* position: relative; */
+}
 .loader-container{
 background-color: rgba(0,0,0);
 width: 100%;
@@ -318,6 +343,8 @@ align-items: center;
 position: absolute;
 top: 0;
 left: 0;
+bottom: 0;
+right: 0;
 
 }
 
@@ -351,3 +378,8 @@ left: 0;
  100%{ box-shadow: 0 0 0 10px inset }
 }
   
+
+table td{
+    padding:5px 10px;
+    text-align:center;
+}
